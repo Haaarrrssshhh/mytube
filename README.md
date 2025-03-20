@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 YouTube Clone with Next.js 15, React 19, Tailwind CSS, and Drizzle ORM
 
-## Getting Started
+This project is a fully functional **YouTube Clone** built using **modern web technologies** such as **Next.js 15**, **React 19**, **Bun**, **Drizzle ORM**, and **ShadCN UI**. It allows users to **watch videos, interact via likes/comments, manage playlists, and create content** with AI-powered optimizations.
 
-First, run the development server:
+## 🎯 Features
+
+- **📹 Advanced Video Player**: Volume control, quality selection, captions toggle.
+- **👍 Like & Comments System**: Users can like videos, post comments, and reply.
+- **📊 Creator Studio**: Upload, manage, and monitor video processing.
+- **🎨 Thumbnail Management**: Custom thumbnails, AI-generated thumbnails, and version restore.
+- **📝 AI-Powered Titles & Descriptions**: Generate video metadata automatically.
+- **📡 Feeds & Playlists**: Trending feed, subscribed feed, custom playlists.
+- **📱 Fully Responsive**: Works seamlessly across desktop & mobile.
+
+---
+
+## 🛠️ Installation Guide
+
+### 1. Prerequisites
+
+Ensure you have the following installed:
+
+- **Node.js** (>= 18.18.0) → [Download Here](https://nodejs.org/)
+- **Bun** (Recommended) → [Install Bun](https://bun.sh/)
+- **PostgreSQL** (For database) → [Download PostgreSQL](https://www.postgresql.org/download/)
+- **Visual Studio Code** (Recommended IDE) → [Download VS Code](https://code.visualstudio.com/)
+
+---
+
+### 2. Clone the Repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/youtube-clone.git
+cd youtube-clone
+```
+### 3.  Install Dependencies
+Using Bun (Recommended)
+```
+bun install
+```
+Using Npm
+```
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**🎨 UI and Styling Setup**
+Install ShadCN UI Components
+1️⃣ Install ShadCN CLI
+```
+bunx bun shadcn@2.1.8 add --all
+```
+Follow the CLI prompts and select:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    Base Color: Neutral
+    CSS Variables: Yes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**📂 Project Structure**
 
-## Learn More
+```
+📁 youtube-clone/
+├── 📁 app/             # Next.js App Router (pages, layouts, API routes)
+├── 📁 components/      # Reusable React components
+├── 📁 db/              # Database schemas and migrations
+├── 📁 lib/             # Utility functions and API integrations
+├── 📁 styles/          # Tailwind global styles
+├── 📄 .env.local       # Environment variables
+├── 📄 tailwind.config.ts # Tailwind CSS configuration
+└── 📄 tsconfig.json    # TypeScript configuration
+```
 
-To learn more about Next.js, take a look at the following resources:
+**🔥 Recommended VS Code Extensions**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+For a smooth development experience, install the following:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- ES7+ React/Redux/React-Native Snippets → Autocomplete for React components.
+- Tailwind CSS IntelliSense → Autocomplete for Tailwind classes.
+- Prettier → Automatic code formatting.
+- ESLint → Linting for TypeScript and JavaScript.
+- Drizzle ORM IntelliSense → Helps with writing database queries.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📝 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.
+
+
+### 🚀 **What’s New in This README?**
+- **Includes all project features & purpose**
+- **Clear step-by-step installation**
+- **Explains why we use Bun over npm**
+- **Explicit ShadCN installation**
+- **Lists required VS Code extensions**
+- **Includes file structure overview**
+
